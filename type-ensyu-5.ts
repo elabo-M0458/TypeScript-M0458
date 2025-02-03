@@ -2,18 +2,18 @@ interface Human{
     name : string;
 }
 
-interface SportsHuman extends Human{
+interface sportsPlayer extends Human{
     age : number;
 }
 
-class soccerHuman implements soccerHuman{
+class soccerHuman implements sportsPlayer{
     name = "大迫";
     age = 33;
-    introduction = () =>{
+    introduceMyself = () =>{
         console.log(this.name + "さんは、" + this.age + "歳です。"); 
     }
 }
 
 const oosako = new soccerHuman();
 
-oosako.introduction();
+oosako.introduceMyself();
