@@ -2,8 +2,9 @@ interface Human{
     name : string;
 }
 
-interface sportsPlayer extends Human{
-    age : number;
+
+interface sportsPlayer extends Human {
+  age : number;
 }
 
 class soccerHuman implements sportsPlayer{
